@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Wct9tfCalculator.jnlp">
+  <information>
+    <title>Wct9tfCalculator</title>
+    <vendor>wthuston</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Wct9tfCalculator.jar" size="5901" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Wct9tfCalculator" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="wct9tfcalculator.Wct9tfCalculator"  name="Wct9tfCalculator" />
+  <update check="always"/>
+</jnlp>

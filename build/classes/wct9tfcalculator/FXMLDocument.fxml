@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onKeyPressed="#keyPressed" onKeyTyped="#keyTyped" prefHeight="475.0" prefWidth="292.0" style="-fx-background-color: black; -fx-background-radius: 25; -fx-padding: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wct9tfcalculator.FXMLDocumentController">
+   <children>
+      <HBox layoutX="17.0" layoutY="374.0" prefHeight="70.0" prefWidth="258.0" spacing="12.0" style="-fx-background-color: black;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#button0" prefHeight="70.0" prefWidth="57.0" style="-fx-background-radius: 0 0 0 25;" text="0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#pointbutton" prefHeight="70.0" prefWidth="57.0" style="-fx-background-color: pink;" text=".">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#equalbutton" prefHeight="70.0" prefWidth="57.0" style="-fx-background-color: cornflowerblue;" text="=">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#addbutton" prefHeight="70.0" prefWidth="57.0" style="-fx-background-color: lightblue; -fx-background-radius: 0 0 25 0;" text="+">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="17.0" layoutY="298.0" prefHeight="70.0" prefWidth="258.0" spacing="12.0" style="-fx-background-color: black;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#button3" prefHeight="70.0" prefWidth="57.0" text="3">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#button2" prefHeight="70.0" prefWidth="57.0" text="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#button1" prefHeight="70.0" prefWidth="57.0" text="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#subtractbutton" prefHeight="70.0" prefWidth="57.0" style="-fx-background-color: lightblue;" text="-">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="17.0" layoutY="222.0" prefHeight="70.0" prefWidth="258.0" spacing="12.0" style="-fx-background-color: black;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#button6" prefHeight="70.0" prefWidth="57.0" text="6">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#button5" prefHeight="70.0" prefWidth="57.0" text="5">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#button4" prefHeight="70.0" prefWidth="57.0" text="4">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#dividebutton" prefHeight="70.0" prefWidth="57.0" style="-fx-background-color: lightblue;" text="/">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="17.0" layoutY="146.0" prefHeight="70.0" prefWidth="258.0" spacing="12.0" style="-fx-background-color: black;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#button9" prefHeight="70.0" prefWidth="57.0" text="9">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#button8" prefHeight="70.0" prefWidth="57.0" text="8">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#button7" prefHeight="70.0" prefWidth="57.0" text="7">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#multbutton" prefHeight="70.0" prefWidth="57.0" style="-fx-background-color: lightblue;" text="X">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_RIGHT" layoutX="19.0" layoutY="42.0" prefHeight="87.0" prefWidth="255.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#clearbutton" style="-fx-background-radius: 25 25 25 25; -fx-background-color: red;" text="C">
+               <font>
+                  <Font size="8.0" />
+               </font></Button>
+            <TextField fx:id="textField" editable="false" promptText="Calculator" style="-fx-background-color: black; -fx-font-size: 35 pt; -fx-text-fill: blue;">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitCalculator" prefHeight="17.0" prefWidth="39.0" style="-fx-background-color: DeepPink;" text="Close">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
